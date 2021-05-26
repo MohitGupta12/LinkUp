@@ -60,7 +60,9 @@ name is''',
                 height: MediaQuery.of(context).size.height * 0.01,
               ),
               MainText(
-                  'This is how it will show in Tinder,and you will not able to change it'),
+                  'This is how it will show in Tinder,and you will not able to change it',
+                  FontWeight.w500,
+                  15),
               SizedBox(
                 height: 30,
               ),

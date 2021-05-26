@@ -78,7 +78,9 @@ class _LoginPageState extends State<LoginPage> {
                     height: 10,
                   ),
                   MainText(
-                      'Make sure your photos, age and bio are true to who you are'),
+                      'Make sure your photos, age and bio are true to who you are',
+                      FontWeight.w500,
+                      15),
                   SizedBox(
                     height: 25,
                   ),
@@ -95,7 +97,9 @@ class _LoginPageState extends State<LoginPage> {
                     height: 10,
                   ),
                   MainText(
-                      'Don\'t be too quick to give out personal information.Date Safely '),
+                      'Don\'t be too quick to give out personal information.Date Safely ',
+                      FontWeight.w500,
+                      15),
                   SizedBox(
                     height: 25,
                   ),
@@ -112,7 +116,9 @@ class _LoginPageState extends State<LoginPage> {
                     height: 10,
                   ),
                   MainText(
-                      'Respect others and treat them as you would like to be treated.'),
+                      'Respect others and treat them as you would like to be treated.',
+                      FontWeight.w500,
+                      15),
                   SizedBox(
                     height: 25,
                   ),
@@ -128,7 +134,7 @@ class _LoginPageState extends State<LoginPage> {
                   SizedBox(
                     height: 10,
                   ),
-                  MainText('Always report bad behavior'),
+                  MainText('Always report bad behavior', FontWeight.w500, 15),
                 ],
               ),
             ),

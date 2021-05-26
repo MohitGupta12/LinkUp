@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
 
 class MainText extends StatelessWidget {
+  @required
   final String inputText;
+  final FontWeight weight;
+  final double size;
 
-  MainText(this.inputText);
+  MainText(this.inputText, this.weight, this.size);
 
   @override
   Widget build(BuildContext context) {
@@ -11,8 +14,8 @@ class MainText extends StatelessWidget {
       inputText,
       style: TextStyle(
           color: Colors.grey,
-          fontSize: 15,
-          fontWeight: FontWeight.w500,
+          fontSize: size,
+          fontWeight: weight,
           fontFamily: 'KoHo'),
     );
   }

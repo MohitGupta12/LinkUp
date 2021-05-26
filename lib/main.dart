@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:tinder/widget/login/namePage.dart';
+import 'package:tinder/widget/login/gender.dart';
 
 import 'widget/login/welcomePage.dart';
 
@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
           accentColor: Colors.grey[800],
           fontFamily: 'KoHo',
         ),
-        home: NamePage());
+        home: Gender());
   }
 }
 

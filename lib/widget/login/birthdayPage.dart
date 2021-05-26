@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:tinder/widget/login/gender.dart';
 
 import '../../main.dart';
 import 'graidentButton.dart';
@@ -53,7 +54,7 @@ birthday is''',
               SizedBox(
                 height: MediaQuery.of(context).size.height * 0.01,
               ),
-              MainText('Your age will be public'),
+              MainText('Your age will be public', FontWeight.w500, 15),
               SizedBox(
                 height: 30,
               ),
@@ -66,8 +67,8 @@ birthday is''',
                   Color(0XFFdf5f23)
                 ], begin: Alignment.bottomLeft, end: Alignment.topRight),
                 onPressed: () {
-                  Navigator.of(context).push(new MaterialPageRoute(
-                      builder: (context) => HomeScreen()));
+                  Navigator.of(context).push(
+                      new MaterialPageRoute(builder: (context) => Gender()));
                 },
               )
             ],
