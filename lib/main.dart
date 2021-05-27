@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
           accentColor: Colors.grey[800],
           fontFamily: 'KoHo',
         ),
-        home: Gender());
+        home: HomeScreen());
   }
 }
 
@@ -104,8 +104,9 @@ class HomeScreen extends StatelessWidget {
                   height: 50,
                   child: ElevatedButton(
                       onPressed: () {
-                        // Navigator.of(context).pushReplacement(new MaterialPageRoute(
-                        //     builder: (context) => LoginPage()));
+                        Navigator.of(context).pushReplacement(
+                            new MaterialPageRoute(
+                                builder: (context) => LoginPage()));
                       },
                       style: ButtonStyle(
                         shadowColor:
