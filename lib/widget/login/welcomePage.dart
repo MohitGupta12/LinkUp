@@ -20,7 +20,7 @@ class _LoginPageState extends State<LoginPage> {
           elevation: 0.0,
           leading: GestureDetector(
             onTap: () {
-              Navigator.of(context).push(
+              Navigator.of(context).pushReplacement(
                   new MaterialPageRoute(builder: (context) => HomeScreen()));
             },
             child: Icon(
@@ -147,7 +147,7 @@ class _LoginPageState extends State<LoginPage> {
               height: 50,
               child: ElevatedButton(
                   onPressed: () {
-                    Navigator.of(context).push(new MaterialPageRoute(
+                    Navigator.of(context).pushReplacement(new MaterialPageRoute(
                         builder: (context) => NamePage()));
                   },
                   style: ButtonStyle(

@@ -67,7 +67,7 @@ birthday is''',
                   Color(0XFFdf5f23)
                 ], begin: Alignment.bottomLeft, end: Alignment.topRight),
                 onPressed: () {
-                  Navigator.of(context).push(
+                  Navigator.of(context).pushReplacement(
                       new MaterialPageRoute(builder: (context) => Gender()));
                 },
               )

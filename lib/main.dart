@@ -74,8 +74,9 @@ class HomeScreen extends StatelessWidget {
                   height: 50,
                   child: ElevatedButton(
                       onPressed: () {
-                        Navigator.of(context).push(new MaterialPageRoute(
-                            builder: (context) => LoginPage()));
+                        Navigator.of(context).pushReplacement(
+                            new MaterialPageRoute(
+                                builder: (context) => LoginPage()));
                       },
                       style: ButtonStyle(
                         shadowColor:
@@ -103,7 +104,7 @@ class HomeScreen extends StatelessWidget {
                   height: 50,
                   child: ElevatedButton(
                       onPressed: () {
-                        // Navigator.of(context).push(new MaterialPageRoute(
+                        // Navigator.of(context).pushReplacement(new MaterialPageRoute(
                         //     builder: (context) => LoginPage()));
                       },
                       style: ButtonStyle(

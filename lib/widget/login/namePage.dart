@@ -13,7 +13,7 @@ class NamePage extends StatelessWidget {
         elevation: 0.0,
         leading: GestureDetector(
           onTap: () {
-            Navigator.of(context).push(
+            Navigator.of(context).pushReplacement(
                 new MaterialPageRoute(builder: (context) => HomeScreen()));
           },
           child: Icon(
@@ -52,7 +52,7 @@ name is''',
                   // )
                 ),
                 onSubmitted: (_) {
-                  Navigator.of(context).push(new MaterialPageRoute(
+                  Navigator.of(context).pushReplacement(new MaterialPageRoute(
                       builder: (context) => HomeScreen()));
                 },
               ),
@@ -75,7 +75,7 @@ name is''',
                   Color(0XFFdf5f23)
                 ], begin: Alignment.bottomLeft, end: Alignment.topRight),
                 onPressed: () {
-                  Navigator.of(context).push(new MaterialPageRoute(
+                  Navigator.of(context).pushReplacement(new MaterialPageRoute(
                       builder: (context) => BirthDayPage()));
                 },
               )

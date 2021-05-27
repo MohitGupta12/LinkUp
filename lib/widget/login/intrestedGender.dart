@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import './uniName.dart';
 import '../../main.dart';
 import 'graidentButton.dart';
 
@@ -155,8 +156,8 @@ class _IntrestedGenderState extends State<IntrestedGender> {
                   Color(0XFFdf5f23)
                 ], begin: Alignment.bottomLeft, end: Alignment.topRight),
                 onPressed: () {
-                  Navigator.of(context).push(new MaterialPageRoute(
-                      builder: (context) => HomeScreen()));
+                  Navigator.of(context).pushReplacement(
+                      new MaterialPageRoute(builder: (context) => UniName()));
                 },
               )
             ],

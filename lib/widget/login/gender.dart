@@ -173,7 +173,7 @@ class _GenderState extends State<Gender> {
                   Color(0XFFdf5f23)
                 ], begin: Alignment.bottomLeft, end: Alignment.topRight),
                 onPressed: () {
-                  Navigator.of(context).push(new MaterialPageRoute(
+                  Navigator.of(context).pushReplacement(new MaterialPageRoute(
                       builder: (context) => IntrestedGender()));
                 },
               )
