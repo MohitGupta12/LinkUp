@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:tinder/widget/login/gender.dart';
+import 'package:tinder/widget/login/passion.dart';
 
 import 'widget/login/welcomePage.dart';
 
@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
           accentColor: Colors.grey[800],
           fontFamily: 'KoHo',
         ),
-        home: HomeScreen());
+        home: PassionPage());
   }
 }
 
@@ -36,98 +36,104 @@ class HomeScreen extends StatelessWidget {
             ], begin: Alignment.bottomRight, end: Alignment.topLeft),
           ),
         ),
-        Column(
-          children: <Widget>[
-            SizedBox(
-              height: 300,
-            ),
-            Container(
-                alignment: Alignment.center,
-                height: 280,
-                width: double.infinity,
-                // color: Colors.green,
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
+        Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Column(
+            children: <Widget>[
+              SizedBox(
+                height: 200,
+              ),
+              Container(
+                  alignment: Alignment.center,
+                  height: 280,
+                  width: double.infinity,
+                  // color: Colors.green,
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Container(
+                          height: 55,
+                          width: 55,
+                          child: Image.asset('assets/image/tinderLogo.png')),
+                      Text(
+                        'tinder',
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 70),
+                        textAlign: TextAlign.center,
+                      ),
+                    ],
+                  )),
+              SizedBox(
+                height: 75,
+              ),
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Column(
                   children: [
                     Container(
-                        height: 55,
-                        width: 55,
-                        child: Image.asset('assets/image/tinderLogo.png')),
-                    Text(
-                      'tinder',
-                      style: TextStyle(
-                          color: Colors.white,
-                          fontWeight: FontWeight.bold,
-                          fontSize: 70),
-                      textAlign: TextAlign.center,
+                      padding: EdgeInsets.symmetric(horizontal: 30),
+                      width: double.infinity,
+                      height: 50,
+                      child: ElevatedButton(
+                          onPressed: () {
+                            Navigator.of(context).pushReplacement(
+                                new MaterialPageRoute(
+                                    builder: (context) => LoginPage()));
+                          },
+                          style: ButtonStyle(
+                            shadowColor:
+                                MaterialStateProperty.all<Color>(Colors.black),
+                            shape: MaterialStateProperty.all<
+                                RoundedRectangleBorder>(RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(25.0),
+                            )),
+                            backgroundColor:
+                                MaterialStateProperty.all(Colors.white),
+                          ),
+                          child: Text(
+                            'Log-in',
+                            style: TextStyle(
+                                color: Theme.of(context).accentColor,
+                                fontSize: 23),
+                          )),
+                    ),
+                    SizedBox(
+                      height: 20,
+                    ),
+                    Container(
+                      padding: EdgeInsets.symmetric(horizontal: 30),
+                      width: double.infinity,
+                      height: 50,
+                      child: ElevatedButton(
+                          onPressed: () {
+                            Navigator.of(context).pushReplacement(
+                                new MaterialPageRoute(
+                                    builder: (context) => LoginPage()));
+                          },
+                          style: ButtonStyle(
+                            shadowColor:
+                                MaterialStateProperty.all<Color>(Colors.black),
+                            shape: MaterialStateProperty.all<
+                                RoundedRectangleBorder>(RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(25.0),
+                            )),
+                            backgroundColor:
+                                MaterialStateProperty.all(Colors.white),
+                          ),
+                          child: Text(
+                            'Sign-up',
+                            style: TextStyle(
+                                color: Theme.of(context).accentColor,
+                                fontSize: 23),
+                          )),
                     ),
                   ],
-                )),
-            SizedBox(
-              height: 75,
-            ),
-            Column(
-              children: [
-                Container(
-                  padding: EdgeInsets.symmetric(horizontal: 30),
-                  width: double.infinity,
-                  height: 50,
-                  child: ElevatedButton(
-                      onPressed: () {
-                        Navigator.of(context).pushReplacement(
-                            new MaterialPageRoute(
-                                builder: (context) => LoginPage()));
-                      },
-                      style: ButtonStyle(
-                        shadowColor:
-                            MaterialStateProperty.all<Color>(Colors.black),
-                        shape:
-                            MaterialStateProperty.all<RoundedRectangleBorder>(
-                                RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(25.0),
-                        )),
-                        backgroundColor:
-                            MaterialStateProperty.all(Colors.white),
-                      ),
-                      child: Text(
-                        'Log-in',
-                        style: TextStyle(
-                            color: Theme.of(context).accentColor, fontSize: 23),
-                      )),
                 ),
-                SizedBox(
-                  height: 20,
-                ),
-                Container(
-                  padding: EdgeInsets.symmetric(horizontal: 30),
-                  width: double.infinity,
-                  height: 50,
-                  child: ElevatedButton(
-                      onPressed: () {
-                        Navigator.of(context).pushReplacement(
-                            new MaterialPageRoute(
-                                builder: (context) => LoginPage()));
-                      },
-                      style: ButtonStyle(
-                        shadowColor:
-                            MaterialStateProperty.all<Color>(Colors.black),
-                        shape:
-                            MaterialStateProperty.all<RoundedRectangleBorder>(
-                                RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(25.0),
-                        )),
-                        backgroundColor:
-                            MaterialStateProperty.all(Colors.white),
-                      ),
-                      child: Text(
-                        'Sign-up',
-                        style: TextStyle(
-                            color: Theme.of(context).accentColor, fontSize: 23),
-                      )),
-                ),
-              ],
-            ),
-          ],
+              ),
+            ],
+          ),
         )
       ]),
     );

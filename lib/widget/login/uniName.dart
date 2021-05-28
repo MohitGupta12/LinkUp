@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tinder/widget/login/passion.dart';
 import './mainText.dart';
 import '../../main.dart';
 import './graidentButton.dart';
@@ -71,7 +72,7 @@ University is''',
                 ], begin: Alignment.bottomLeft, end: Alignment.topRight),
                 onPressed: () {
                   Navigator.of(context).pushReplacement(new MaterialPageRoute(
-                      builder: (context) => HomeScreen()));
+                      builder: (context) => PassionPage()));
                 },
               )
             ],
