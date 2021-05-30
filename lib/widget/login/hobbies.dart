@@ -26,10 +26,10 @@ class _HobbiesState extends State<Hobbies> {
           child: InkWell(
             child: Center(
                 child: Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 5, vertical: 2),
+              padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
               child: Text(widget.inputText,
                   style: TextStyle(
-                      color: c1, fontWeight: FontWeight.w500, fontSize: 18)),
+                      color: c1, fontWeight: FontWeight.w500, fontSize: 17)),
             )),
             onTap: () {
               setState(() {

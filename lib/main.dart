@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:tinder/widget/login/passion.dart';
+import 'package:tinder/matches.dart';
+// import 'package:tinder/widget/login/passion.dart';
 
 import 'widget/login/welcomePage.dart';
 
-// ToDo move main.dart to widget folder and fix the error
 void main() {
   runApp(MyApp());
 }
@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
           accentColor: Colors.grey[800],
           fontFamily: 'KoHo',
         ),
-        home: PassionPage());
+        home: HomeScreen());
   }
 }
 

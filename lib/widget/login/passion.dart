@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:tinder/widget/login/photoPage..dart';
+import 'package:tinder/matches.dart';
 import '../../main.dart';
 import 'graidentButton.dart';
 // ignore: unused_import
-import 'Hobbies.dart';
+import 'hobbies.dart';
 
 class PassionPage extends StatefulWidget {
   @override
@@ -31,74 +31,277 @@ class _PassionPageState extends State<PassionPage> {
       ),
       body: Container(
         padding: EdgeInsets.symmetric(horizontal: 30),
-        child: SingleChildScrollView(
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text(
-                'Passion',
-                style: TextStyle(fontSize: 50),
-              ),
-              SizedBox(
-                height: 10,
-              ),
-              Text(
-                  'Lets everyone know wht you\'re passionate about by adding it to your profile.'),
-              SizedBox(
-                height: 15,
-              ),
-              SingleChildScrollView(
-                child: Container(
-                  child: Column(
-                    children: <Widget>[
-                      Padding(
-                        padding: const EdgeInsets.only(),
-                        child: Container(
-                          child: Row(
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              children: <Widget>[
-                                Hobbies('Amine'),
-                                Hobbies('Movies'),
-                                Hobbies('hikking'),
-                                Hobbies('90\'kid')
-                              ]),
-                        ),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text(
+              'Passion',
+              style: TextStyle(fontSize: 50),
+            ),
+            SizedBox(
+              height: 10,
+            ),
+            Text(
+                'Lets everyone know wht you\'re passionate about by adding it to your profile.'),
+            SizedBox(
+              height: 15,
+            ),
+            Container(
+              height: 530,
+              child: SingleChildScrollView(
+                child: Column(
+                  children: <Widget>[
+                    Padding(
+                      padding: const EdgeInsets.only(),
+                      child: Container(
+                        child: Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: <Widget>[
+                              Hobbies('Travel'),
+                              Hobbies('Netflix'),
+                              Hobbies('Twitch'),
+                              Hobbies('Walk')
+                            ]),
                       ),
-                      Padding(
-                        padding: const EdgeInsets.only(),
-                        child: Container(
-                          child: Row(
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              children: <Widget>[
-                                Hobbies('Travel'),
-                                Hobbies('Art'),
-                                Hobbies('Dance'),
-                                Hobbies('Poetry')
-                              ]),
-                        ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(),
+                      child: Container(
+                        child: Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: <Widget>[
+                              Hobbies('90\'s Kid'),
+                              Hobbies('Anime'),
+                              Hobbies('Dog lover'),
+                            ]),
                       ),
-                    ],
-                  ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(),
+                      child: Container(
+                        child: Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: <Widget>[
+                              Hobbies('Hikking'),
+                              Hobbies('Fashion'),
+                              Hobbies('House Parties'),
+                            ]),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(),
+                      child: Container(
+                        child: Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: <Widget>[
+                              Hobbies('DIy'),
+                              Hobbies('Genshin Impact'),
+                              Hobbies('Art'),
+                            ]),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(),
+                      child: Container(
+                        child: Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: <Widget>[
+                              Hobbies('Musician'),
+                              Hobbies('Board games'),
+                              Hobbies('Brunch'),
+                            ]),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(),
+                      child: Container(
+                        child: Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: <Widget>[
+                              Hobbies('Museum'),
+                              Hobbies('Festivals'),
+                              Hobbies('Tea'),
+                              Hobbies('Golf')
+                            ]),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(),
+                      child: Container(
+                        child: Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: <Widget>[
+                              Hobbies('Disney'),
+                              Hobbies('Gamer'),
+                              Hobbies('Vlogging'),
+                            ]),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(),
+                      child: Container(
+                        child: Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: <Widget>[
+                              Hobbies('Running'),
+                              Hobbies('Music'),
+                              Hobbies('Triva'),
+                              Hobbies('Yoga')
+                            ]),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(),
+                      child: Container(
+                        child: Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: <Widget>[
+                              Hobbies('Photography'),
+                              Hobbies('Vlogging'),
+                              Hobbies('Hip Hop'),
+                            ]),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(),
+                      child: Container(
+                        child: Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: <Widget>[
+                              Hobbies('Triva'),
+                              Hobbies('Cricket'),
+                              Hobbies('Wine'),
+                              Hobbies('Coffee')
+                            ]),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(),
+                      child: Container(
+                        child: Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: <Widget>[
+                              Hobbies('Maggi'),
+                              Hobbies('Volunterring '),
+                              Hobbies('Vegan'),
+                            ]),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(),
+                      child: Container(
+                        child: Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: <Widget>[
+                              Hobbies('Cat Lover'),
+                              Hobbies('Politics'),
+                              Hobbies('Working out'),
+                            ]),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(),
+                      child: Container(
+                        child: Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: <Widget>[
+                              Hobbies('PotterHead'),
+                              Hobbies('Karaoke'),
+                              Hobbies('Reading'),
+                            ]),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(),
+                      child: Container(
+                        child: Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: <Widget>[
+                              Hobbies('Slam Poetry'),
+                              Hobbies('Foodie'),
+                              Hobbies('Sushi'),
+                            ]),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(),
+                      child: Container(
+                        child: Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: <Widget>[
+                              Hobbies('Stand-up Comedy'),
+                              Hobbies('Outdoors'),
+                            ]),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(),
+                      child: Container(
+                        child: Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: <Widget>[
+                              Hobbies('Actism'),
+                              Hobbies('Fishing'),
+                              Hobbies('Spirituality'),
+                            ]),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(),
+                      child: Container(
+                        child: Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: <Widget>[
+                              Hobbies('Sports'),
+                              Hobbies('Surfing'),
+                              Hobbies('Soccer'),
+                            ]),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(),
+                      child: Container(
+                        child: Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: <Widget>[
+                              Hobbies('Environmentalism'),
+                              Hobbies('Astrology'),
+                            ]),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(),
+                      child: Container(
+                        child: Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: <Widget>[
+                              Hobbies('Movies'),
+                              Hobbies('Instagarm'),
+                              Hobbies('Poetry'),
+                            ]),
+                      ),
+                    ),
+                  ],
                 ),
               ),
-              SizedBox(
-                height: 20,
-              ),
-              RaisedGradientButton(
-                child: Text('CONTINUE'),
-                radius: BorderRadius.circular(25),
-                gradient: LinearGradient(colors: [
-                  Color(0XFFFD297B),
-                  Color(0XFFFF5864),
-                  Color(0XFFdf5f23)
-                ], begin: Alignment.bottomLeft, end: Alignment.topRight),
-                onPressed: () {
-                  Navigator.of(context).pushReplacement(
-                      new MaterialPageRoute(builder: (context) => PhotoPage()));
-                },
-              )
-            ],
-          ),
+            ),
+            SizedBox(
+              height: 20,
+            ),
+            RaisedGradientButton(
+              child: Text('CONTINUE'),
+              radius: BorderRadius.circular(25),
+              gradient: LinearGradient(colors: [
+                Color(0XFFFD297B),
+                Color(0XFFFF5864),
+                Color(0XFFdf5f23)
+              ], begin: Alignment.bottomLeft, end: Alignment.topRight),
+              onPressed: () {
+                Navigator.of(context).pushReplacement(
+                    new MaterialPageRoute(builder: (context) => Matchs()));
+              },
+            )
+          ],
         ),
       ),
     );
