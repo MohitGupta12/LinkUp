@@ -27,6 +27,7 @@ class Setting extends StatelessWidget {
             return 0;
           }
           Navigator.of(context)
+              // ignore: missing_return
               .pushReplacement(new MaterialPageRoute(builder: (context) {
             if (index == 1) {
               return Message();
