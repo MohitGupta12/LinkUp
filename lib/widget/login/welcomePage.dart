@@ -38,7 +38,8 @@ class _LoginPageState extends State<LoginPage> {
               child: Container(
                   height: 50,
                   width: 50,
-                  child: Image.asset('assets/image/tinderColorLogo.png')),
+                  child:
+                      Image.asset('assets/images/icons/tinderColorLogo.png')),
             ),
             Text(
               'Welcome to Tinder',
@@ -70,7 +71,8 @@ class _LoginPageState extends State<LoginPage> {
                       Container(
                           height: 18,
                           width: 30,
-                          child: Image.asset('assets/image/tickMark.png')),
+                          child:
+                              Image.asset('assets/images/icons/tickMark.png')),
                       HeaderText('Be yourself.'),
                     ],
                   ),
@@ -89,7 +91,8 @@ class _LoginPageState extends State<LoginPage> {
                       Container(
                           height: 18,
                           width: 30,
-                          child: Image.asset('assets/image/tickMark.png')),
+                          child:
+                              Image.asset('assets/images/icons/tickMark.png')),
                       HeaderText('Stay safe.'),
                     ],
                   ),
@@ -108,7 +111,8 @@ class _LoginPageState extends State<LoginPage> {
                       Container(
                           height: 18,
                           width: 30,
-                          child: Image.asset('assets/image/tickMark.png')),
+                          child:
+                              Image.asset('assets/images/icons/tickMark.png')),
                       HeaderText('Play it cool.'),
                     ],
                   ),
@@ -127,7 +131,8 @@ class _LoginPageState extends State<LoginPage> {
                       Container(
                           height: 18,
                           width: 30,
-                          child: Image.asset('assets/image/tickMark.png')),
+                          child:
+                              Image.asset('assets/images/icons/tickMark.png')),
                       HeaderText('Be proactive'),
                     ],
                   ),

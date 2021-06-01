@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tinder/rootpage.dart';
 // ignore: unused_import
 import 'package:tinder/matches.dart';
 // import 'package:tinder/widget/login/passion.dart';
@@ -19,7 +20,7 @@ class MyApp extends StatelessWidget {
           accentColor: Colors.grey[800],
           fontFamily: 'KoHo',
         ),
-        home: HomeScreen());
+        home: RootPage());
   }
 }
 
@@ -55,7 +56,8 @@ class HomeScreen extends StatelessWidget {
                       Container(
                           height: 55,
                           width: 55,
-                          child: Image.asset('assets/image/tinderLogo.png')),
+                          child: Image.asset(
+                              'assets/images/icons/tinderLogo.png')),
                       Text(
                         'tinder',
                         style: TextStyle(

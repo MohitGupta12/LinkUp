@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:tinder/matches.dart';
+import 'package:tinder/rootpage.dart';
 import '../../main.dart';
 import 'graidentButton.dart';
 // ignore: unused_import
@@ -298,7 +298,7 @@ class _PassionPageState extends State<PassionPage> {
               ], begin: Alignment.bottomLeft, end: Alignment.topRight),
               onPressed: () {
                 Navigator.of(context).pushReplacement(
-                    new MaterialPageRoute(builder: (context) => Matchs()));
+                    new MaterialPageRoute(builder: (context) => RootPage()));
               },
             )
           ],

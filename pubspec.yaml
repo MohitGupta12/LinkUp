@@ -23,10 +23,12 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  gradient_widgets: ^0.6.0
+  # gradient_widgets: ^0.6.0
   image_picker: ^0.7.5+3
   dotted_border: ^2.0.0
   curved_navigation_bar: ^0.3.7 
+  flutter_tindercard: ^0.2.0
+  flutter_custom_clippers: ^1.1.2
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
@@ -49,9 +51,26 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
-    - assets/image/tinderLogo.png
-    - assets/image/tinderColorLogo.png
-    - assets/image/tickMark.png
+    - assets/images/icons/tinderLogo.png
+    - assets/images/icons/tinderColorLogo.png
+    - assets/images/icons/tickMark.png
+    - assets/images/girls/img_1.jpeg
+    - assets/images/girls/img_2.jpeg
+    - assets/images/girls/img_3.jpeg
+    - assets/images/girls/img_4.jpeg
+    - assets/images/girls/img_5.jpeg
+    - assets/images/girls/img_6.jpeg
+    - assets/images/girls/img_7.jpeg
+    - assets/images/girls/img_8.jpeg
+    - assets/images/girls/img_9.jpeg
+    - assets/images/girls/img_10.jpeg
+    - assets/images/girls/img_11.jpeg
+    - assets/images/girls/img_12.jpeg
+    - assets/images/girls/img_13.jpeg
+    - assets/images/girls/img_14.jpeg
+    - assets/images/girls/img_15.jpeg
+    - assets/images/girls/img_16.jpeg
+    - assets/images/profile.png
   #  - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
