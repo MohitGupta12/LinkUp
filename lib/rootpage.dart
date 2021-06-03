@@ -11,36 +11,23 @@ class RootPage extends StatefulWidget {
 }
 
 class _RootPageState extends State<RootPage> {
-  int pageIndex = 0;
+  int pageIndex = 1;
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // appBar: AppBar(
-      //   elevation: 10,
-      //   backgroundColor: Theme.of(context).accentColor,
-      //   leading: GestureDetector(
-      //     onTap: () {
-      //       Navigator.of(context).pushReplacement(
-      //           new MaterialPageRoute(builder: (context) => HomeScreen()));
-      //     },
-      //     child: Icon(
-      //       Icons.arrow_back_sharp,
-      //       color: Colors.white,
-      //     ),
-      //   ),
-      // ),
       body: getBody(),
       bottomNavigationBar: CurvedNavigationBar(
         color: Theme.of(context).accentColor,
         backgroundColor: Theme.of(context).primaryColor,
         buttonBackgroundColor: Colors.white70,
         height: 60,
+        index: 1,
         animationCurve: Curves.easeInOut,
         animationDuration: Duration(milliseconds: 300),
         items: [
-          Icon(Icons.person),
           Icon(Icons.chat_bubble),
+          Icon(Icons.person),
           Icon(Icons.edit),
         ],
         onTap: (index) {
@@ -57,7 +44,7 @@ class _RootPageState extends State<RootPage> {
   Widget getBody() {
     return IndexedStack(
       index: pageIndex,
-      children: [Matchs(), Message(), Profile()],
+      children: [Message(), Matchs(), Profile()],
     );
   }
 }
