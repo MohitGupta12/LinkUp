@@ -52,9 +52,9 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
-    - assets/images/icons/tinderLogo.png
-    - assets/images/icons/tinderColorLogo.png
-    - assets/images/icons/tickMark.png
+    - assets/icons/tinderLogo.png
+    - assets/icons/tinderColorLogo.png
+    - assets/icons/tickMark.png
     - assets/images/girls/img_1.jpeg
     - assets/images/girls/img_2.jpeg
     - assets/images/girls/img_3.jpeg
@@ -72,11 +72,11 @@ flutter:
     - assets/images/girls/img_15.jpeg
     - assets/images/girls/img_16.jpeg
     - assets/images/profile.jpg
-    - assets/images/icons/close_icon.png
-    - assets/images/icons/like_icon.png
-    - assets/images/icons/refresh_icon.png
-    - assets/images/icons/star_icon.png
-    - assets/images/icons/thunder_icon.png
+    - assets/icons/close_icon.png
+    - assets/icons/like_icon.png
+    - assets/icons/refresh_icon.png
+    - assets/icons/star_icon.png
+    - assets/icons/thunder_icon.png
   #  - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

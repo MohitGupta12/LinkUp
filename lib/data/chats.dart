@@ -1,5 +1,5 @@
 // users story list
-const List chats_json = [
+const List chats = [
   {
     "img": "assets/images/girls/img_1.jpeg",
     "name": "Ayo",
