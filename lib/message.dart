@@ -169,7 +169,7 @@ class _MessageState extends State<Message> {
                 height: 15,
               ),
               Container(
-                height: 445,
+                height: 443,
                 child: SingleChildScrollView(
                   child: Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 15),
