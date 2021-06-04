@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 // ignore: unused_import
-import 'package:tinder/pages/matches.dart';
-import 'package:tinder/pages/rootpage.dart';
+import './pages/matches.dart';
 
 import 'pages/signup/welcomePage.dart';
 
