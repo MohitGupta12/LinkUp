@@ -167,7 +167,7 @@ class _GenderState extends State<Gender> {
               RaisedGradientButton(
                 child: Text('CONTINUE'),
                 radius: BorderRadius.circular(25),
-                gradient: LinearGradient(colors: [
+                gradient1: LinearGradient(colors: [
                   Color(0XFFFD297B),
                   Color(0XFFFF5864),
                   Color(0XFFdf5f23)
