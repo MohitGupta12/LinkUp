@@ -155,7 +155,7 @@ class _IntrestedGenderState extends State<IntrestedGender> {
                   Color(0XFFFF5864),
                   Color(0XFFdf5f23)
                 ], begin: Alignment.bottomLeft, end: Alignment.topRight),
-                onPressed: () {
+                onPressed1: () {
                   Navigator.of(context).pushReplacement(
                       new MaterialPageRoute(builder: (context) => UniName()));
                 },

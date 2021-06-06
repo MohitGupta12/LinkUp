@@ -4,7 +4,13 @@ import '../../widget/mainText.dart';
 import '../signup/welcomePage.dart';
 import 'birthdayPage.dart';
 
-class NamePage extends StatelessWidget {
+class NamePage extends StatefulWidget {
+  @override
+  _NamePageState createState() => _NamePageState();
+}
+
+class _NamePageState extends State<NamePage> {
+  bool colorValue;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -38,18 +44,19 @@ name is''',
               ),
               TextField(
                 autocorrect: true,
+                onChanged: (text) {
+                  if (text == null || text == '') {
+                    setState(() {
+                      return colorValue = true;
+                    });
+                  } else {
+                    setState(() {
+                      return colorValue = false;
+                    });
+                  }
+                },
                 decoration: InputDecoration(
                   hintText: 'First name',
-                  // suffixIcon: IconButton(
-                  //   icon: Text(
-                  //     'Done',
-                  //     textScaleFactor: 0.9,
-                  //   ),
-                  //   onPressed: () {
-                  //     Navigator.of(context).push(new MaterialPageRoute(
-                  //         builder: (context) => HomeScreen()));
-                  //   },
-                  // )
                 ),
                 onSubmitted: (_) {
                   Navigator.of(context).pushReplacement(new MaterialPageRoute(
@@ -68,13 +75,14 @@ name is''',
               ),
               RaisedGradientButton(
                 child: Text('CONTINUE'),
+                isActive: (colorValue ?? true) ? false : true,
                 radius: BorderRadius.circular(25),
                 gradient1: LinearGradient(colors: [
                   Color(0XFFFD297B),
                   Color(0XFFFF5864),
                   Color(0XFFdf5f23)
                 ], begin: Alignment.bottomLeft, end: Alignment.topRight),
-                onPressed: () {
+                onPressed1: () {
                   Navigator.of(context).pushReplacement(new MaterialPageRoute(
                       builder: (context) => BirthDayPage()));
                 },

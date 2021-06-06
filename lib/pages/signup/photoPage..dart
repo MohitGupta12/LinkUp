@@ -222,7 +222,7 @@ class _PhotoPageState extends State<PhotoPage> {
                 Color(0XFFFF5864),
                 Color(0XFFdf5f23)
               ], begin: Alignment.bottomLeft, end: Alignment.topRight),
-              onPressed: () {},
+              onPressed1: () {},
             )
           ],
         ),

@@ -6,18 +6,18 @@ class RaisedGradientButton extends StatefulWidget {
   final Gradient gradient1;
   final double width;
   final double height;
-  final Function onPressed;
+  final Function onPressed1;
+  final Function onPressed2 = null;
   final BorderRadius radius;
   bool isActive = true;
 
-  // TODO make logic for each button in their respective page;
   RaisedGradientButton({
     Key key,
     @required this.child,
     this.gradient1,
     this.width = double.infinity,
     this.height = 50.0,
-    this.onPressed,
+    this.onPressed1,
     this.radius,
     this.isActive,
   }) : super(key: key);
@@ -36,10 +36,10 @@ class _RaisedGradientButtonState extends State<RaisedGradientButton> {
   Widget build(BuildContext context) {
     return Container(
       width: widget.width,
-      height: 50.0,
+      height: widget.height,
       decoration: BoxDecoration(
           borderRadius: widget.radius,
-          gradient: (widget.isActive ?? true) ? gradient2 : widget.gradient1,
+          gradient: (widget.isActive ?? true) ? widget.gradient1 : gradient2,
           boxShadow: [
             BoxShadow(
               color: Colors.grey[500],
@@ -50,7 +50,9 @@ class _RaisedGradientButtonState extends State<RaisedGradientButton> {
       child: Material(
         color: Colors.transparent,
         child: InkWell(
-            onTap: widget.onPressed,
+            onTap: (widget.isActive ?? true)
+                ? widget.onPressed1
+                : widget.onPressed2,
             child: Center(
               child: widget.child,
             )),
