@@ -26,30 +26,46 @@ class HomeScreen extends StatelessWidget {
                   height: 200,
                 ),
                 Container(
-                    alignment: Alignment.center,
-                    height: 280,
-                    width: double.infinity,
-                    // color: Colors.green,
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Container(
-                            height: 55,
-                            width: 55,
-                            child: Image.asset(
-                                'assets/images/icons/tinderLogo.png')),
-                        Text(
-                          'tinder',
-                          style: TextStyle(
-                              color: Colors.white,
-                              fontWeight: FontWeight.bold,
-                              fontSize: 70),
-                          textAlign: TextAlign.center,
-                        ),
-                      ],
-                    )),
+                  alignment: Alignment.center,
+                  height: 280,
+                  width: double.infinity,
+                  // color: Colors.green,
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Container(
+                          height: 55,
+                          width: 55,
+                          child: Image.asset(
+                              'assets/images/icons/tinderLogo.png')),
+                      Text(
+                        'tinder',
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 70),
+                        textAlign: TextAlign.center,
+                      ),
+                    ],
+                  ),
+                ),
                 SizedBox(
-                  height: 75,
+                  height: 55,
+                ),
+                Center(
+                  child: Text(
+                    """By clicking \"Log In\", you agree with our terms.Learn 
+how we process your data  in our Privacy Policg and
+Cookies Policy""",
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                        wordSpacing: 1.5,
+                        color: Colors.white,
+                        fontWeight: FontWeight.w600),
+                  ),
+                ),
+                SizedBox(
+                  height: 25,
                 ),
                 Padding(
                   padding: const EdgeInsets.all(8.0),

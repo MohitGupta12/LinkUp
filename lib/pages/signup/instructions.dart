@@ -25,6 +25,7 @@ class _LoginPageState extends State<LoginPage> {
             },
             child: Icon(
               Icons.cancel_outlined,
+              size: 40,
               color: Theme.of(context).accentColor,
             ),
           ),
@@ -149,7 +150,15 @@ class _LoginPageState extends State<LoginPage> {
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 30.0),
               child: RaisedGradientButton(
-                child: Text('I AGREE'),
+                child: Text(
+                  'I AGREE',
+                  style: TextStyle(
+                      wordSpacing: 7,
+                      letterSpacing: 2,
+                      color: Colors.black54,
+                      fontSize: 18,
+                      fontWeight: FontWeight.w600),
+                ),
                 radius: BorderRadius.circular(25),
                 gradient1: LinearGradient(colors: [
                   Color(0XFFFD297B),
@@ -158,7 +167,10 @@ class _LoginPageState extends State<LoginPage> {
                 ], begin: Alignment.bottomLeft, end: Alignment.topRight),
                 onPressed1: () {
                   Navigator.of(context).pushReplacement(
-                      new MaterialPageRoute(builder: (context) => NamePage()));
+                    new MaterialPageRoute(
+                      builder: (context) => NamePage(),
+                    ),
+                  );
                 },
               ),
             ),

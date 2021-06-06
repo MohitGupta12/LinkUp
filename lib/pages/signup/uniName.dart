@@ -1,11 +1,19 @@
 import 'package:flutter/material.dart';
+import 'package:tinder/pages/signup/photoPage..dart';
+import 'package:tinder/widget/gradientText.dart';
 
 import '../signup/intrestedGender.dart';
 import '../signup/passion.dart';
 import '../../widget/mainText.dart';
 import '../../widget/graidentButton.dart';
 
-class UniName extends StatelessWidget {
+class UniName extends StatefulWidget {
+  @override
+  _UniNameState createState() => _UniNameState();
+}
+
+class _UniNameState extends State<UniName> {
+  bool colorValue;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -39,14 +47,19 @@ University is''',
               ),
               TextField(
                 autocorrect: true,
+                onChanged: (text) {
+                  if (text == null || text == '') {
+                    setState(() {
+                      return colorValue = true;
+                    });
+                  } else {
+                    setState(() {
+                      return colorValue = false;
+                    });
+                  }
+                },
                 decoration: InputDecoration(
                   hintText: 'University  name',
-                  // suffixIcon: IconButton(
-                  //   icon: Text(
-                  //     'Done',
-                  //     textScaleFactor: 0.9,HomeScreen HomeScreen()));
-                  //   },
-                  // )
                 ),
                 onSubmitted: (_) {
                   Navigator.of(context).pushReplacement(new MaterialPageRoute(
@@ -64,7 +77,11 @@ University is''',
                 height: 30,
               ),
               RaisedGradientButton(
-                child: Text('CONTINUE'),
+                child: GradientText(
+                  colorValue,
+                  'CONTINUE',
+                ),
+                isActive: (colorValue ?? true) ? false : true,
                 radius: BorderRadius.circular(25),
                 gradient1: LinearGradient(colors: [
                   Color(0XFFFD297B),
@@ -72,8 +89,11 @@ University is''',
                   Color(0XFFdf5f23)
                 ], begin: Alignment.bottomLeft, end: Alignment.topRight),
                 onPressed1: () {
-                  Navigator.of(context).pushReplacement(new MaterialPageRoute(
-                      builder: (context) => PassionPage()));
+                  Navigator.of(context).pushReplacement(
+                    new MaterialPageRoute(
+                      builder: (context) => PhotoPage(),
+                    ),
+                  );
                 },
               )
             ],

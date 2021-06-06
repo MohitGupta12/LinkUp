@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:tinder/widget/gradientText.dart';
 
 // ignore: must_be_immutable
 class RaisedGradientButton extends StatefulWidget {

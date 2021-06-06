@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:tinder/pages/signup/gender.dart';
+import 'package:tinder/widget/gradientText.dart';
 
 import '../signup/uniName.dart';
 import '../../widget/graidentButton.dart';
@@ -19,6 +20,7 @@ class _IntrestedGenderState extends State<IntrestedGender> {
   double three = 2;
   bool checkBoxValue = false;
   bool value2 = false;
+  bool colorValue;
 
   @override
   Widget build(BuildContext context) {
@@ -69,6 +71,7 @@ class _IntrestedGenderState extends State<IntrestedGender> {
                                     fontSize: 27))),
                         onTap: () {
                           setState(() {
+                            colorValue = false;
                             boderColour1 = boderColour;
                             one = 3;
                             two = 2;
@@ -100,6 +103,7 @@ class _IntrestedGenderState extends State<IntrestedGender> {
                                     fontSize: 27))),
                         onTap: () {
                           setState(() {
+                            colorValue = false;
                             boderColour1 = Colors.grey;
                             boderColour2 = boderColour;
                             two = 3;
@@ -131,6 +135,7 @@ class _IntrestedGenderState extends State<IntrestedGender> {
                                     fontSize: 27))),
                         onTap: () {
                           setState(() {
+                            colorValue = false;
                             boderColour1 = Colors.grey;
                             boderColour2 = Colors.grey;
                             boderColour3 = boderColour;
@@ -148,7 +153,11 @@ class _IntrestedGenderState extends State<IntrestedGender> {
                 height: MediaQuery.of(context).size.height * 0.08,
               ),
               RaisedGradientButton(
-                child: Text('CONTINUE'),
+                child: GradientText(
+                  colorValue,
+                  'CONTINUE',
+                ),
+                isActive: (colorValue ?? true) ? false : true,
                 radius: BorderRadius.circular(25),
                 gradient1: LinearGradient(colors: [
                   Color(0XFFFD297B),

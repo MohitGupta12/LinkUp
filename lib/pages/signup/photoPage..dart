@@ -1,15 +1,13 @@
 import 'package:dotted_border/dotted_border.dart';
 import 'package:flutter/material.dart';
+import 'package:tinder/pages/rootpage.dart';
 import 'package:tinder/pages/signup/passion.dart';
 import 'package:tinder/widget/graidentButton.dart';
-// // ignore: unused_import
-// import 'package:tinder/widget/login/imageInput.dart';
 import '../../widget/mainText.dart';
 import '../signup/passion.dart';
 import 'dart:io';
 import 'package:image_picker/image_picker.dart';
 import 'package:tinder/widget/mainText.dart';
-// ignore: unused_import/
 import '../../widget/graidentButton.dart';
 
 class PhotoPage extends StatefulWidget {
@@ -65,6 +63,9 @@ class _PhotoPageState extends State<PhotoPage> {
         padding: EdgeInsets.symmetric(horizontal: 10),
         child: Column(
           children: [
+            SizedBox(
+              height: 20,
+            ),
             Text(
               'Add photos',
               style: TextStyle(fontSize: 35),
@@ -72,15 +73,7 @@ class _PhotoPageState extends State<PhotoPage> {
             SizedBox(
               height: 8,
             ),
-            MainText('Add at least 2 photos to continue', FontWeight.w400, 17),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                TextButton(onPressed: takePictureCam, child: Text('Camera')),
-                TextButton(onPressed: takePictureGal, child: Text('Gallery')),
-              ],
-            ),
-
+            MainText('Add at least 1 photos to continue', FontWeight.w400, 17),
             SizedBox(
               height: 100,
             ),
@@ -122,9 +115,9 @@ class _PhotoPageState extends State<PhotoPage> {
                           decoration: BoxDecoration(
                             color: Colors.grey[300],
                           ),
-                          child: storedImage != null
-                              ? Image.file(storedImage, fit: BoxFit.cover)
-                              : Container(),
+                          // child: storedImage != null
+                          //     ? Image.file(storedImage, fit: BoxFit.cover)
+                          //     : Container(),
                         ),
                       ),
                     ),
@@ -209,11 +202,24 @@ class _PhotoPageState extends State<PhotoPage> {
               ],
             ),
             SizedBox(
-              height: MediaQuery.of(context).size.height * 0.15,
+              height: 60,
             ),
-            // SizedBox(
-            //   height: 200,
-            // ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                ElevatedButton(
+                  onPressed: takePictureCam,
+                  child: Text('Camera'),
+                ),
+                ElevatedButton(
+                  onPressed: takePictureCam,
+                  child: Text('Gallery'),
+                ),
+              ],
+            ),
+            SizedBox(
+              height: 30,
+            ),
             RaisedGradientButton(
               child: Text('CONTINUE'),
               radius: BorderRadius.circular(25),
@@ -222,7 +228,13 @@ class _PhotoPageState extends State<PhotoPage> {
                 Color(0XFFFF5864),
                 Color(0XFFdf5f23)
               ], begin: Alignment.bottomLeft, end: Alignment.topRight),
-              onPressed1: () {},
+              onPressed1: () {
+                Navigator.of(context).pushReplacement(
+                  new MaterialPageRoute(
+                    builder: (context) => RootPage(),
+                  ),
+                );
+              },
             )
           ],
         ),

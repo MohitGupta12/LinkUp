@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tinder/widget/gradientText.dart';
 
 import '../signup/birthdayPage.dart';
 import '../signup/intrestedGender.dart';
@@ -11,6 +12,7 @@ class Gender extends StatefulWidget {
 }
 
 class _GenderState extends State<Gender> {
+  bool colorValue;
   Color boderColour1 = Colors.grey;
   Color boderColour2 = Colors.grey;
   Color boderColour3 = Colors.grey;
@@ -63,13 +65,17 @@ class _GenderState extends State<Gender> {
                       color: Colors.transparent,
                       child: InkWell(
                         child: Center(
-                            child: Text('Male',
-                                style: TextStyle(
-                                    color: boderColour1,
-                                    fontWeight: FontWeight.w400,
-                                    fontSize: 27))),
+                          child: Text(
+                            'Male',
+                            style: TextStyle(
+                                color: boderColour1,
+                                fontWeight: FontWeight.w400,
+                                fontSize: 27),
+                          ),
+                        ),
                         onTap: () {
                           setState(() {
+                            colorValue = false;
                             boderColour1 = boderColour;
                             one = 3;
                             two = 2;
@@ -101,6 +107,7 @@ class _GenderState extends State<Gender> {
                                     fontSize: 27))),
                         onTap: () {
                           setState(() {
+                            colorValue = false;
                             boderColour1 = Colors.grey;
                             boderColour2 = boderColour;
                             two = 3;
@@ -132,6 +139,7 @@ class _GenderState extends State<Gender> {
                                     fontSize: 27))),
                         onTap: () {
                           setState(() {
+                            colorValue = false;
                             boderColour1 = Colors.grey;
                             boderColour2 = Colors.grey;
                             boderColour3 = boderColour;
@@ -165,7 +173,11 @@ class _GenderState extends State<Gender> {
                 height: 30,
               ),
               RaisedGradientButton(
-                child: Text('CONTINUE'),
+                child: GradientText(
+                  colorValue,
+                  'CONTINUE',
+                ),
+                isActive: (colorValue ?? true) ? false : true,
                 radius: BorderRadius.circular(25),
                 gradient1: LinearGradient(colors: [
                   Color(0XFFFD297B),

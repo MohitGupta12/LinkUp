@@ -44,7 +44,7 @@ class Profile extends StatelessWidget {
                     style: TextStyle(
                         fontSize: 27,
                         fontWeight: FontWeight.w700,
-                        color: Theme.of(context).accentColor),
+                        color: Colors.white),
                   ),
                   SizedBox(
                     height: 5,
@@ -54,7 +54,7 @@ class Profile extends StatelessWidget {
                     style: TextStyle(
                         fontSize: 20,
                         fontWeight: FontWeight.w700,
-                        color: Theme.of(context).accentColor),
+                        color: Colors.white70),
                   ),
                   SizedBox(
                     height: 50,
@@ -96,7 +96,7 @@ class Profile extends StatelessWidget {
                                 color: Theme.of(context)
                                     .accentColor
                                     .withOpacity(0.8),
-                                fontSize: 14,
+                                fontSize: 14.5,
                                 fontWeight: FontWeight.w600),
                           )
                         ],
@@ -177,8 +177,10 @@ class Profile extends StatelessWidget {
                                   color: Theme.of(context)
                                       .accentColor
                                       .withOpacity(0.8),
-                                  fontSize: 15,
-                                  fontWeight: FontWeight.bold),
+                                  fontSize: 16,
+                                  letterSpacing: 1,
+                                  wordSpacing: 3,
+                                  fontWeight: FontWeight.w800),
                             )
                           ],
                         ),
@@ -216,7 +218,7 @@ class Profile extends StatelessWidget {
                                 color: Theme.of(context)
                                     .accentColor
                                     .withOpacity(0.8),
-                                fontSize: 14,
+                                fontSize: 14.5,
                                 fontWeight: FontWeight.w600),
                           )
                         ],

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:tinder/pages/rootpage.dart';
 import 'package:tinder/pages/signup/uniName.dart';
+import 'package:tinder/widget/gradientText.dart';
 import '../../widget/graidentButton.dart';
 import '../../widget/hobbies.dart';
 
@@ -10,10 +11,14 @@ class PassionPage extends StatefulWidget {
 }
 
 class _PassionPageState extends State<PassionPage> {
+  bool colorValue;
+  int count;
+
   // int _count;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      resizeToAvoidBottomInset: false,
       appBar: AppBar(
         backgroundColor: Colors.white24,
         elevation: 0.0,
@@ -132,7 +137,7 @@ class _PassionPageState extends State<PassionPage> {
                             children: <Widget>[
                               Hobbies('Disney'),
                               Hobbies('Gamer'),
-                              Hobbies('Vlogging'),
+                              Hobbies('Cat lover'),
                             ]),
                       ),
                     ),
@@ -288,7 +293,11 @@ class _PassionPageState extends State<PassionPage> {
               height: 20,
             ),
             RaisedGradientButton(
-              child: Text('CONTINUE'),
+              child: GradientText(
+                colorValue,
+                'CONTINUE',
+              ),
+              isActive: true,
               radius: BorderRadius.circular(25),
               gradient1: LinearGradient(colors: [
                 Color(0XFFFD297B),

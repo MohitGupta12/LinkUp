@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:tinder/pages/signup/namePage.dart';
-import 'package:tinder/pages/signup/photoPage..dart';
 // ignore: unused_import
 import './pages/matches.dart';
 
@@ -21,6 +19,6 @@ class MyApp extends StatelessWidget {
           accentColor: Colors.grey[800],
           fontFamily: 'KoHo',
         ),
-        home: NamePage());
+        home: HomeScreen());
   }
 }
