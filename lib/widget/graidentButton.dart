@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tinder/widget/gradientText.dart';
 
 // ignore: must_be_immutable
 class RaisedGradientButton extends StatefulWidget {
@@ -28,10 +29,9 @@ class RaisedGradientButton extends StatefulWidget {
 
 class _RaisedGradientButtonState extends State<RaisedGradientButton> {
   final Gradient gradient2 = LinearGradient(
-      colors: [Color(0XFFD6D6D6), Color(0XFFBDBDBD), Color(0XFF9E9E9E)],
+      colors: [Color(0XFF9E9E9E), Color(0XFFBDBDBD), Color(0XFFD6D6D6)],
       begin: Alignment.bottomLeft,
       end: Alignment.topRight);
-
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -53,9 +53,7 @@ class _RaisedGradientButtonState extends State<RaisedGradientButton> {
             onTap: (widget.isActive ?? true)
                 ? widget.onPressed1
                 : widget.onPressed2,
-            child: Center(
-              child: widget.child,
-            )),
+            child: Center(child: widget.child)),
       ),
     );
   }

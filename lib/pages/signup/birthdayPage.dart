@@ -1,11 +1,18 @@
 import 'package:flutter/material.dart';
+import 'package:tinder/widget/gradientText.dart';
 
 import './namePage.dart';
 import './gender.dart';
 import '../../widget/graidentButton.dart';
 import '../../widget/mainText.dart';
 
-class BirthDayPage extends StatelessWidget {
+class BirthDayPage extends StatefulWidget {
+  @override
+  _BirthDayPageState createState() => _BirthDayPageState();
+}
+
+class _BirthDayPageState extends State<BirthDayPage> {
+  bool colorValue;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -39,11 +46,20 @@ birthday is''',
               ),
               TextField(
                 autocorrect: true,
+                onChanged: (text) {
+                  if (text == null || text == '') {
+                    setState(() {
+                      return colorValue = true;
+                    });
+                  } else {
+                    setState(() {
+                      return colorValue = false;
+                    });
+                  }
+                },
                 keyboardType: TextInputType.datetime,
                 decoration: InputDecoration(
                   hintText: 'DD/MM/YYYY',
-                  counterText: '',
-                  // hintText: 'First name',
                 ),
                 onSubmitted: (_) {
                   Navigator.of(context).push(
@@ -58,7 +74,11 @@ birthday is''',
                 height: 30,
               ),
               RaisedGradientButton(
-                child: Text('CONTINUE'),
+                child: GradientText(
+                  colorValue,
+                  'CONTINUE',
+                ),
+                isActive: (colorValue ?? true) ? false : true,
                 radius: BorderRadius.circular(25),
                 gradient1: LinearGradient(colors: [
                   Color(0XFFFD297B),

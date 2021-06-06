@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tinder/widget/gradientText.dart';
 import '../../widget/graidentButton.dart';
 import '../../widget/mainText.dart';
 import '../signup/welcomePage.dart';
@@ -74,7 +75,10 @@ name is''',
                 height: 30,
               ),
               RaisedGradientButton(
-                child: Text('CONTINUE'),
+                child: GradientText(
+                  colorValue,
+                  'CONTINUE',
+                ),
                 isActive: (colorValue ?? true) ? false : true,
                 radius: BorderRadius.circular(25),
                 gradient1: LinearGradient(colors: [
