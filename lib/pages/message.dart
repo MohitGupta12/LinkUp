@@ -114,6 +114,8 @@ class _MessageState extends State<Message> {
                                             decoration: BoxDecoration(
                                                 shape: BoxShape.circle,
                                                 image: DecorationImage(
+                                                    alignment:
+                                                        Alignment.topCenter,
                                                     image: AssetImage(
                                                         chats[index]['img']),
                                                     fit: BoxFit.cover)),
@@ -126,6 +128,7 @@ class _MessageState extends State<Message> {
                                         decoration: BoxDecoration(
                                             shape: BoxShape.circle,
                                             image: DecorationImage(
+                                                alignment: Alignment.topCenter,
                                                 image: AssetImage(
                                                     chats[index]['img']),
                                                 fit: BoxFit.cover)),
@@ -217,6 +220,9 @@ class _MessageState extends State<Message> {
                                                           shape:
                                                               BoxShape.circle,
                                                           image: DecorationImage(
+                                                              alignment:
+                                                                  Alignment
+                                                                      .topCenter,
                                                               image: AssetImage(
                                                                   userMessages[
                                                                           index]

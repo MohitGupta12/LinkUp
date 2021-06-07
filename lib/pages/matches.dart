@@ -32,18 +32,19 @@ class _MatchsState extends State<Matchs> {
     );
   }
 
-  Widget _likeOrDislikeIconOnPhoto(String text, Color textColor) {
+  Widget _likeOrDislike(String text, Color textColor) {
     return AnimatedOpacity(
       opacity: 0.6,
       duration: Duration(milliseconds: 500),
       child: Container(
-        padding: EdgeInsets.all(0.8),
+        padding: EdgeInsets.all(7.0),
         decoration: BoxDecoration(
-          border: Border.all(color: textColor, width: 2),
+          border: Border.all(color: textColor, width: 3),
         ),
         child: Text(
           text,
-          style: TextStyle(color: textColor, fontSize: 27),
+          style: TextStyle(
+              color: textColor, fontSize: 30, fontWeight: FontWeight.bold),
         ),
       ),
     );
@@ -68,7 +69,6 @@ class _MatchsState extends State<Matchs> {
           cardController: CardController(),
           swipeUpdateCallback: (DragUpdateDetails details, Alignment align) {
             if (align.x < 0) {
-              //Card is LEFT swiping
               if (align.x < -0.5) {
                 _isLike = false;
               }
@@ -78,7 +78,6 @@ class _MatchsState extends State<Matchs> {
                 _xPosition = -(align.x * 0.1);
               }
             } else if (align.x > 0) {
-              //Card is RIGHT swiping
               if (align.x > 0.5) {
                 _isLike = true;
               }
@@ -255,8 +254,7 @@ class _MatchsState extends State<Matchs> {
                         child: (_isLike != null &&
                                 !_isLike &&
                                 index == _currentIndex)
-                            ? _likeOrDislikeIconOnPhoto(
-                                "Dislike", Colors.redAccent)
+                            ? _likeOrDislike("NOPE", Colors.redAccent)
                             : Container(),
                       ),
                     ),
@@ -268,8 +266,7 @@ class _MatchsState extends State<Matchs> {
                         child: (_isLike != null &&
                                 _isLike &&
                                 index == _currentIndex)
-                            ? _likeOrDislikeIconOnPhoto(
-                                "Like", Colors.greenAccent[700])
+                            ? _likeOrDislike("LIKE", Colors.greenAccent[700])
                             : Container(),
                       ),
                     ),

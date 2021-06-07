@@ -128,7 +128,7 @@ class _IntrestedGenderState extends State<IntrestedGender> {
                       color: Colors.transparent,
                       child: InkWell(
                         child: Center(
-                            child: Text('Others',
+                            child: Text('Everyone',
                                 style: TextStyle(
                                     color: boderColour3,
                                     fontWeight: FontWeight.w400,

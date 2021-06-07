@@ -32,12 +32,12 @@ class HomeScreen extends StatelessWidget {
                   // color: Colors.green,
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.end,
                     children: [
                       Container(
-                          height: 55,
-                          width: 55,
-                          child: Image.asset(
-                              'assets/images/icons/tinderLogo.png')),
+                          height: 65,
+                          width: 60,
+                          child: Image.asset('assets/icons/tinderLogo.png')),
                       Text(
                         'tinder',
                         style: TextStyle(

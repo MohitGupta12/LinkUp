@@ -1,6 +1,5 @@
 import 'package:dotted_border/dotted_border.dart';
 import 'package:flutter/material.dart';
-import 'package:tinder/pages/rootpage.dart';
 import 'package:tinder/pages/signup/passion.dart';
 import 'package:tinder/widget/graidentButton.dart';
 import '../../widget/mainText.dart';
@@ -16,7 +15,8 @@ class PhotoPage extends StatefulWidget {
 }
 
 class _PhotoPageState extends State<PhotoPage> {
-  File storedImage;
+  File storedImage1;
+  File storedImage2;
   File image1;
   File image2;
 
@@ -26,7 +26,7 @@ class _PhotoPageState extends State<PhotoPage> {
         source: ImageSource.camera, maxWidth: 100, maxHeight: 150);
     setState(
       () {
-        storedImage = File(imageFile.path);
+        storedImage1 = File(imageFile.path);
       },
     );
   }
@@ -37,7 +37,7 @@ class _PhotoPageState extends State<PhotoPage> {
         source: ImageSource.gallery, maxWidth: 100, maxHeight: 150);
     setState(
       () {
-        storedImage = File(imageFile.path);
+        storedImage2 = File(imageFile.path);
       },
     );
   }
@@ -92,9 +92,9 @@ class _PhotoPageState extends State<PhotoPage> {
                           decoration: BoxDecoration(
                             color: Colors.grey[300],
                           ),
-                          child: storedImage != null
+                          child: storedImage1 != null
                               ? Image.file(
-                                  storedImage,
+                                  storedImage1,
                                   fit: BoxFit.cover,
                                 )
                               : Container(),
@@ -115,9 +115,9 @@ class _PhotoPageState extends State<PhotoPage> {
                           decoration: BoxDecoration(
                             color: Colors.grey[300],
                           ),
-                          // child: storedImage != null
-                          //     ? Image.file(storedImage, fit: BoxFit.cover)
-                          //     : Container(),
+                          child: storedImage2 != null
+                              ? Image.file(storedImage2, fit: BoxFit.cover)
+                              : Container(),
                         ),
                       ),
                     ),
@@ -231,7 +231,7 @@ class _PhotoPageState extends State<PhotoPage> {
               onPressed1: () {
                 Navigator.of(context).pushReplacement(
                   new MaterialPageRoute(
-                    builder: (context) => RootPage(),
+                    builder: (context) => PassionPage(),
                   ),
                 );
               },

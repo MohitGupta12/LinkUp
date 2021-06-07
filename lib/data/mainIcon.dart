@@ -10,7 +10,7 @@ const List item_icons = [
     "icon_size": 30.0,
   },
   {
-    "icon": "assets/images/icons/star_icon.png",
+    "icon": "assets/icons/star_icon.png",
     "size": 50.0,
     "icon_size": 30.0,
   },
