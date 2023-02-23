@@ -15,9 +15,15 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
         debugShowCheckedModeBanner: false,
         theme: ThemeData(
+<<<<<<< HEAD
           primarySwatch: Colors.pink,
           accentColor: Colors.grey[800],
           fontFamily: 'KoHo',
+=======
+          fontFamily: 'KoHo',
+          colorScheme: ColorScheme.fromSwatch(primarySwatch: Colors.pink)
+              .copyWith(secondary: Colors.grey[800]),
+>>>>>>> master
         ),
         home: HomeScreen());
   }

@@ -18,7 +18,11 @@ class _RootPageState extends State<RootPage> {
     return Scaffold(
       body: getBody(),
       bottomNavigationBar: CurvedNavigationBar(
+<<<<<<< HEAD
         color: Theme.of(context).accentColor,
+=======
+        color: Theme.of(context).colorScheme.secondary,
+>>>>>>> master
         backgroundColor: Theme.of(context).primaryColor,
         buttonBackgroundColor: Colors.white70,
         height: 60,

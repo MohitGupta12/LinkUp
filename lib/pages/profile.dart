@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_custom_clippers/flutter_custom_clippers.dart';
+<<<<<<< HEAD
 import 'package:tinder/data/account.dart';
+=======
+import '../data/profile.dart';
+>>>>>>> master
 
 class Profile extends StatelessWidget {
   @override
@@ -14,7 +18,11 @@ class Profile extends StatelessWidget {
             width: size.width,
             height: size.height * 0.60,
             decoration: BoxDecoration(
+<<<<<<< HEAD
               color: Theme.of(context).accentColor.withOpacity(0.35),
+=======
+              color: Theme.of(context).colorScheme.secondary.withOpacity(0.35),
+>>>>>>> master
               boxShadow: [
                 BoxShadow(
                     color: Colors.pink.withOpacity(0.35), spreadRadius: 10)
@@ -74,7 +82,12 @@ class Profile extends StatelessWidget {
                               boxShadow: [
                                 BoxShadow(
                                   color: Theme.of(context)
+<<<<<<< HEAD
                                       .accentColor
+=======
+                                      .colorScheme
+                                      .secondary
+>>>>>>> master
                                       .withOpacity(0.4),
                                   blurRadius: 10,
                                   spreadRadius: 5,
@@ -84,7 +97,11 @@ class Profile extends StatelessWidget {
                             child: Icon(
                               Icons.settings,
                               size: 40,
+<<<<<<< HEAD
                               color: Theme.of(context).accentColor,
+=======
+                              color: Theme.of(context).colorScheme.secondary,
+>>>>>>> master
                             ),
                           ),
                           SizedBox(
@@ -94,7 +111,12 @@ class Profile extends StatelessWidget {
                             'Setting',
                             style: TextStyle(
                                 color: Theme.of(context)
+<<<<<<< HEAD
                                     .accentColor
+=======
+                                    .colorScheme
+                                    .secondary
+>>>>>>> master
                                     .withOpacity(0.8),
                                 fontSize: 14.5,
                                 fontWeight: FontWeight.w600),
@@ -125,7 +147,12 @@ class Profile extends StatelessWidget {
                                       boxShadow: [
                                         BoxShadow(
                                           color: Theme.of(context)
+<<<<<<< HEAD
                                               .accentColor
+=======
+                                              .colorScheme
+                                              .secondary
+>>>>>>> master
                                               .withOpacity(0.4),
                                           blurRadius: 10,
                                           spreadRadius: 5,
@@ -145,12 +172,23 @@ class Profile extends StatelessWidget {
                                       height: 30,
                                       width: 30,
                                       decoration: BoxDecoration(
+<<<<<<< HEAD
                                         color: Theme.of(context).accentColor,
+=======
+                                        color: Theme.of(context)
+                                            .colorScheme
+                                            .secondary,
+>>>>>>> master
                                         shape: BoxShape.circle,
                                         boxShadow: [
                                           BoxShadow(
                                             color: Theme.of(context)
+<<<<<<< HEAD
                                                 .accentColor
+=======
+                                                .colorScheme
+                                                .secondary
+>>>>>>> master
                                                 .withOpacity(0.4),
                                             blurRadius: 2,
                                             spreadRadius: 2,
@@ -175,7 +213,12 @@ class Profile extends StatelessWidget {
                               'Add media',
                               style: TextStyle(
                                   color: Theme.of(context)
+<<<<<<< HEAD
                                       .accentColor
+=======
+                                      .colorScheme
+                                      .secondary
+>>>>>>> master
                                       .withOpacity(0.8),
                                   fontSize: 16,
                                   letterSpacing: 1,
@@ -196,7 +239,12 @@ class Profile extends StatelessWidget {
                               boxShadow: [
                                 BoxShadow(
                                   color: Theme.of(context)
+<<<<<<< HEAD
                                       .accentColor
+=======
+                                      .colorScheme
+                                      .secondary
+>>>>>>> master
                                       .withOpacity(0.4),
                                   blurRadius: 10,
                                   spreadRadius: 5,
@@ -206,7 +254,11 @@ class Profile extends StatelessWidget {
                             child: Icon(
                               Icons.edit,
                               size: 40,
+<<<<<<< HEAD
                               color: Theme.of(context).accentColor,
+=======
+                              color: Theme.of(context).colorScheme.secondary,
+>>>>>>> master
                             ),
                           ),
                           SizedBox(
@@ -216,7 +268,12 @@ class Profile extends StatelessWidget {
                             'Edit Info',
                             style: TextStyle(
                                 color: Theme.of(context)
+<<<<<<< HEAD
                                     .accentColor
+=======
+                                    .colorScheme
+                                    .secondary
+>>>>>>> master
                                     .withOpacity(0.8),
                                 fontSize: 14.5,
                                 fontWeight: FontWeight.w600),

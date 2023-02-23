@@ -36,7 +36,11 @@ class _GenderState extends State<Gender> {
           },
           child: Icon(
             Icons.arrow_back_ios_rounded,
+<<<<<<< HEAD
             color: Theme.of(context).accentColor,
+=======
+            color: Theme.of(context).colorScheme.secondary,
+>>>>>>> master
           ),
         ),
       ),

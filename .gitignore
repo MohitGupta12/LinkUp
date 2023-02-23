@@ -8,6 +8,10 @@
 .buildlog/
 .history
 .svn/
+<<<<<<< HEAD
+=======
+migrate_working_dir/
+>>>>>>> master
 
 # IntelliJ related
 *.iml
@@ -31,9 +35,12 @@
 .pub/
 /build/
 
+<<<<<<< HEAD
 # Web related
 lib/generated_plugin_registrant.dart
 
+=======
+>>>>>>> master
 # Symbolication related
 app.*.symbols
 
