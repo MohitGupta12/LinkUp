@@ -1,9 +1,5 @@
 import 'package:flutter/material.dart';
-<<<<<<< HEAD
-import '../data/chats.dart';
-=======
 import '../data/usersMessages.dart';
->>>>>>> master
 
 class Message extends StatefulWidget {
   @override
@@ -34,11 +30,7 @@ class _MessageState extends State<Message> {
                     style: TextStyle(
                         fontSize: 18,
                         fontWeight: FontWeight.bold,
-<<<<<<< HEAD
-                        color: Theme.of(context).accentColor),
-=======
                         color: Theme.of(context).colorScheme.secondary),
->>>>>>> master
                   ),
                 ),
               ),
@@ -46,11 +38,7 @@ class _MessageState extends State<Message> {
                 height: 10,
               ),
               Divider(
-<<<<<<< HEAD
-                color: Theme.of(context).accentColor.withOpacity(0.5),
-=======
                 color: Theme.of(context).colorScheme.secondary.withOpacity(0.5),
->>>>>>> master
                 thickness: 1,
               ),
               Padding(
@@ -58,14 +46,10 @@ class _MessageState extends State<Message> {
                 child: Container(
                   height: 38,
                   decoration: BoxDecoration(
-<<<<<<< HEAD
-                      color: Theme.of(context).accentColor.withOpacity(0.3),
-=======
                       color: Theme.of(context)
                           .colorScheme
                           .secondary
                           .withOpacity(0.3),
->>>>>>> master
                       borderRadius: BorderRadius.circular(5)),
                   child: TextField(
                     decoration: InputDecoration(
@@ -79,11 +63,7 @@ class _MessageState extends State<Message> {
                 ),
               ),
               Divider(
-<<<<<<< HEAD
-                color: Theme.of(context).accentColor.withOpacity(0.5),
-=======
                 color: Theme.of(context).colorScheme.secondary.withOpacity(0.5),
->>>>>>> master
                 thickness: 1,
               ),
               SizedBox(
@@ -101,11 +81,7 @@ class _MessageState extends State<Message> {
                   style: TextStyle(
                       fontSize: 15,
                       fontWeight: FontWeight.w600,
-<<<<<<< HEAD
-                      color: Theme.of(context).accentColor),
-=======
                       color: Theme.of(context).colorScheme.secondary),
->>>>>>> master
                 ),
               ),
               SizedBox(
@@ -214,12 +190,8 @@ class _MessageState extends State<Message> {
                                     Border.all(width: 1, color: Colors.black54),
                                 borderRadius: BorderRadius.circular(15),
                                 color: Theme.of(context)
-<<<<<<< HEAD
-                                    .accentColor
-=======
                                     .colorScheme
                                     .secondary
->>>>>>> master
                                     .withOpacity(0.2)),
                             child: Padding(
                               padding:
@@ -310,12 +282,8 @@ class _MessageState extends State<Message> {
                                     decoration: BoxDecoration(
                                       borderRadius: BorderRadius.circular(7),
                                       color: Theme.of(context)
-<<<<<<< HEAD
-                                          .accentColor
-=======
                                           .colorScheme
                                           .secondary
->>>>>>> master
                                           .withOpacity(0.07),
                                     ),
                                     height: 60,

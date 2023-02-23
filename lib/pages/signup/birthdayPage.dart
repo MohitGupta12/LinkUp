@@ -26,11 +26,7 @@ class _BirthDayPageState extends State<BirthDayPage> {
           },
           child: Icon(
             Icons.arrow_back_ios_rounded,
-<<<<<<< HEAD
-            color: Theme.of(context).accentColor,
-=======
             color: Theme.of(context).colorScheme.secondary,
->>>>>>> master
           ),
         ),
       ),

@@ -1,10 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_tindercard/flutter_tindercard.dart';
-<<<<<<< HEAD
-import '../data/info.dart';
-=======
 import '../data/users.dart';
->>>>>>> master
 import '../data/mainIcon.dart';
 
 class Matchs extends StatefulWidget {
@@ -301,11 +297,7 @@ class _MatchsState extends State<Matchs> {
             shape: BoxShape.circle,
             boxShadow: [
               BoxShadow(
-<<<<<<< HEAD
-                color: Theme.of(context).accentColor.withOpacity(0.4),
-=======
                 color: Theme.of(context).colorScheme.secondary.withOpacity(0.4),
->>>>>>> master
                 blurRadius: 10,
                 spreadRadius: 5,
               ),
